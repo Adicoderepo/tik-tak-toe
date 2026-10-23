@@ -1,0 +1,160 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top, #3b0764, #12051f 60%, #05010a);
+
+    color: white;
+}
+
+.game-container {
+    width: 350px;
+    padding: 25px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 2px solid #38bdf8;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 0 25px rgba(56, 189, 248, 0.4),
+        0 0 60px rgba(168, 85, 247, 0.25);
+
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-bottom: 15px;
+
+    font-size: 32px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 10px #c026d3,
+        0 0 20px #c026d3;
+}
+
+.turn {
+    margin-bottom: 25px;
+
+    font-size: 20px;
+
+    color: #d8b4fe;
+}
+
+#player {
+    color: #38bdf8;
+
+    font-weight: bold;
+}
+
+.board {
+    width: 270px;
+    height: 270px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.cell {
+    border: 2px solid #38bdf8;
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: white;
+
+    font-size: 55px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.cell:hover {
+    background: rgba(56, 189, 248, 0.18);
+
+    transform: scale(1.03);
+
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+.restart {
+    margin-top: 20px;
+
+    padding: 12px 30px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        90deg,
+        #9333ea,
+        #c026d3
+    );
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.restart:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 20px #c026d3;
+}
+
+#result {
+    min-height: 30px;
+
+    margin-top: 18px;
+
+    color: #38bdf8;
+
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+.back {
+    display: block;
+
+    margin-top: 20px;
+
+    color: #d8b4fe;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.back:hover {
+    color: #38bdf8;
+}
